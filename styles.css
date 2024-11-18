@@ -1,0 +1,267 @@
+html {
+    background-color: black;
+    background-image: url(Images/Background.png);
+    background-size: 70%;
+    font-family: Jura;
+    
+}
+
+
+.header-cont{
+    margin: 1.5%;
+    display: flex;
+    align-items: center;
+    animation: move 1.5s;
+}
+
+@keyframes move {
+    from {width: 0%;}
+    to {width: 97%;}
+}
+
+.header-cont img{
+    order: 1;
+    object-fit: contain;
+    max-width: 7.5%;
+    margin: 1.5%;
+}
+
+.header-txt{
+    order: 2;
+    color: white;
+    align-self: center;
+}
+
+.header-txt h1{
+    margin: 0;
+    font-size: 3em;
+    font-size: 2.25vw;
+    letter-spacing: .235em;
+}
+
+.header-txt p{
+    margin: 0 0 0 .15em;
+    font-size: 1em;
+    font-size: .7vw;
+    letter-spacing: .0675em;
+}
+
+.header-nav {
+    order: 3;
+    align-self: center;
+    color: white;
+    margin-left: auto;
+    margin-right: 2.5%;
+    font-size: 1.75em;
+    font-size: 1.1vw;
+}
+
+.header-nav a{
+    text-decoration: none;
+    letter-spacing: .15em;
+    padding-left: 1em;
+    transition: all .26s ease
+}
+
+.header-nav a:link {
+    color: #fff;
+}
+
+.header-nav a:visited {
+    color: #fff;
+}
+
+.header-nav a:hover {
+    color: rgb(60, 60, 60);
+    font-size: 1.25vw;
+}
+
+.header-nav a:active {
+    color: rgb(60, 60, 60);
+}
+
+.content-header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-header h1  {
+    margin: auto;
+    font-size: 1.75vw;
+    letter-spacing: .15em;
+}
+
+@media (max-width: 768px) { .content-header h1{
+    font-size: 3.5vw;
+}
+}
+
+.content-body {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 1.5vw auto auto auto;
+    width: 75%;
+    justify-content: center;
+}
+
+.content-body p{
+    margin: auto;
+    font-size: 1vw;
+    letter-spacing: .0675em;
+    text-align: center;
+}
+
+@media (max-width: 768px) { .content-body p{
+    font-size: 2vw;
+}
+}
+
+.landing {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-txt {
+    order: 1;
+    font-size: 2vw;
+}
+
+.landing button{
+    background: none;
+    border: none;
+    font-size: 4vw;
+    color: white;
+    font-family: Jura;
+    text-decoration: none;
+    transition: all .26s ease
+}
+
+.landing button:hover {
+    color: rgb(60, 60, 60);
+    font-size: 4.15vw;
+}
+
+
+.venture {
+    display: flex;
+    margin: 5% 12.5% 5% 12.5%;
+    width: auto;
+    color: white;
+    flex-direction: row;
+}
+
+@media (max-width: 768px) { .venture {
+    flex-direction: column;
+}
+}
+
+.venture img{
+    order: 1;
+    object-fit: contain;
+    max-width: 25%;
+    flex-basis: 25%;
+}
+
+@media (max-width: 768px) { .venture img {
+    margin: auto auto 2.5% auto;
+}
+}
+
+.venture-txt{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7.5%;
+    text-align: center;
+    flex-basis: 75%;
+}
+
+@media (max-width: 768px) { .venture-txt {
+    margin: auto;
+}
+}
+
+.venture-txt h1{
+    order: 1;
+    font-size: 1.25vw;
+    letter-spacing: .15em;
+    text-align: center;
+}
+
+@media (max-width: 768px) { .venture-txt h1 {
+    font-size: 3.5vw;
+}
+}
+
+.venture-txt p{
+    order: 2;
+    font-size: 1vw;
+    letter-spacing: .0675em;
+    text-align: left;
+}
+
+@media (max-width: 768px) { .venture-txt p {
+    font-size: 2vw;
+}
+}
+
+.footer {
+    display: flex;
+    color: white;
+    align-self: center;
+    margin: 1.5% 1.5% 0 1.5%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: black;
+}
+
+.footer p{
+    order: 1;
+    font-size: 1em;
+    font-size: .65vw;
+    letter-spacing: .15em;
+}
+
+.footer-nav{
+    order: 2;
+    margin-left: auto;
+    margin-right: 1.5%;
+    align-self: center;
+    font-size: 1em;
+    font-size: .65vw;
+}
+
+.footer-nav a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: .15em;
+    padding-left: 2em;
+    transition: all .26s ease
+}
+
+.footer a:link {
+    color: #fff;
+}
+
+.footer a:visited {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: rgb(60, 60, 60);
+    font-size: .80vw;
+}
+
+.footer a:active {
+    color: rgb(60, 60, 60);
+}
