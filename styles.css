@@ -213,6 +213,76 @@ html {
 }
 }
 
+.obscura {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.obscura-txt {
+    margin: auto;
+    font-size: 1vw;
+    letter-spacing: .0675em;
+    text-align: center;
+    color: #ed1c24;
+
+}
+
+.contact {
+    margin: 15px auto;
+    width: 75%;
+    font-family: Jura;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #606060;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #252525;
+    color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    display: none; /* Hidden by default */
+}
+
+.submit-button {
+    font-family: Jura;
+    background-color: #252525;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 25%;
+    float: right;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #aeaeae;
+}
+
 .footer {
     display: flex;
     color: white;
@@ -231,6 +301,7 @@ html {
     font-size: .65vw;
     letter-spacing: .15em;
 }
+
 
 .footer-nav{
     order: 2;

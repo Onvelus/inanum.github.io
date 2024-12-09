@@ -12,16 +12,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Inanum" />
     <link rel="manifest" href="Favicon/site.webmanifest" />
-    <script src="jquery-3.7.1.min.js"></script>
-    <script src="scripts.js"></script>
-<title>Landing - Inanum</title>
+<title>Contact - Inanum</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description=" content="Take a look at what we value, and how we intend to achieve our goals.">
-</head>
 
 <body>
-<div class="hidden">
     <div class="header-cont">
             <img src="Images/Logo.png" alt="Logo">
         <div class="header-txt">
@@ -36,9 +32,49 @@
         </div>
     </div>
 
-    <div class="landing">
-        <button class="play" id="btn1">WELCOME</button>
-        <audio id="sound1" src="Conditioned.mp3" ></audio>
+    <div class="content-header">
+        <h1>CONTACT</h1>
+    </div>
+
+    <br>
+
+    <div class="contact">
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" 
+                       name="name" 
+                       placeholder="..." required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" 
+                       name="email" 
+                       placeholder="..." required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" 
+                       name="phone" 
+                       placeholder="..." required>
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" 
+                          name="message" 
+                          placeholder="..." 
+                          rows="5" required></textarea>
+                <span class="error-message" 
+                      id="messageError"></span>
+            </div>
+            <button type="submit" 
+                    class="submit-button">
+             SUBMIT
+            </button>
+        </form>
     </div>
 
     <div class="footer">
@@ -49,22 +85,5 @@
         </div>
     </div>
 
-<script>
-$('button').click(function(){
-    var $this = $(this);
-    var id = $this.attr('id').replace(/btn/, '');
-    $this.toggleClass('active');
-    if($this.hasClass('active')){
-        $this.text('WELCOME'); 
-        $('audio[id^="sound"]')[id-1].play();        
-    } else {
-        $this.text('WELCOME');
-        $('audio[id^="sound"]')[id-1].pause();
-    }
-});
-</script>
-    
-
-</div>           
 </body>
 

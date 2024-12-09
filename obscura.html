@@ -12,16 +12,12 @@
     <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Inanum" />
     <link rel="manifest" href="Favicon/site.webmanifest" />
-    <script src="jquery-3.7.1.min.js"></script>
-    <script src="scripts.js"></script>
-<title>Landing - Inanum</title>
+<title>Obscura - Inanum</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description=" content="Take a look at what we value, and how we intend to achieve our goals.">
-</head>
 
 <body>
-<div class="hidden">
     <div class="header-cont">
             <img src="Images/Logo.png" alt="Logo">
         <div class="header-txt">
@@ -36,9 +32,19 @@
         </div>
     </div>
 
-    <div class="landing">
-        <button class="play" id="btn1">WELCOME</button>
-        <audio id="sound1" src="Conditioned.mp3" ></audio>
+    <div class="obscura">
+        <div class="obscura-img">
+            <img src="Images/Logo_ObscuraDenied.png" alt="obscura" class="obscura">
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="content-body">
+        <p> You have been denied access, or have not been granted access to <span class="obscura-txt"> PROJECT OBSCURA </span>. Please remember the conditions of your authorization. <span class="obscura-txt"> PROJECT OBSCURA </span>'s existence is of upmost importance to INANUM. If you believe this is a mistake, please use the contact form in the bottom right, input your authorization characters, and await reply.</p>
     </div>
 
     <div class="footer">
@@ -49,22 +55,5 @@
         </div>
     </div>
 
-<script>
-$('button').click(function(){
-    var $this = $(this);
-    var id = $this.attr('id').replace(/btn/, '');
-    $this.toggleClass('active');
-    if($this.hasClass('active')){
-        $this.text('WELCOME'); 
-        $('audio[id^="sound"]')[id-1].play();        
-    } else {
-        $this.text('WELCOME');
-        $('audio[id^="sound"]')[id-1].pause();
-    }
-});
-</script>
-    
-
-</div>           
 </body>
 

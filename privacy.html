@@ -12,18 +12,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-title" content="Inanum" />
     <link rel="manifest" href="Favicon/site.webmanifest" />
-    <script src="jquery-3.7.1.min.js"></script>
-    <script src="scripts.js"></script>
-<title>Landing - Inanum</title>
+<title>Privacy - Inanum</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description=" content="Take a look at what we value, and how we intend to achieve our goals.">
-</head>
 
 <body>
-<div class="hidden">
     <div class="header-cont">
-            <img src="Images/Logo.png" alt="Logo">
+            <img src="Images/Logo.png" alt="logo">
         <div class="header-txt">
             <h1>INANUM</h1>
             <p>MAKING TOMORROW, YESTERDAY</p>
@@ -36,9 +32,12 @@
         </div>
     </div>
 
-    <div class="landing">
-        <button class="play" id="btn1">WELCOME</button>
-        <audio id="sound1" src="Conditioned.mp3" ></audio>
+    <div class="content-header">
+        <h1>PRIVACY POLICY</h1>
+    </div>
+
+    <div class="content-body">
+        <p>Privacy is an alienable human right, every living being on Earth requires it to some extent. We believe in this right. That's why we will never collect, observe, or sell any data you input to this site. Only the bare neccesities are tracked and even then we do not use those neccesities for any purpose. Rest assured, your secrets, and your privacy, are safe with us. If you have any concerns about data collection, do not hesitate to use the contact form in the bottom right of this page.</p>
     </div>
 
     <div class="footer">
@@ -49,22 +48,5 @@
         </div>
     </div>
 
-<script>
-$('button').click(function(){
-    var $this = $(this);
-    var id = $this.attr('id').replace(/btn/, '');
-    $this.toggleClass('active');
-    if($this.hasClass('active')){
-        $this.text('WELCOME'); 
-        $('audio[id^="sound"]')[id-1].play();        
-    } else {
-        $this.text('WELCOME');
-        $('audio[id^="sound"]')[id-1].pause();
-    }
-});
-</script>
-    
-
-</div>           
 </body>
 
